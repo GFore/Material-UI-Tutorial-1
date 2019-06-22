@@ -1,3 +1,8 @@
+This project is built following the intro to Material-UI tutorial at [Reactgo.com](https://reactgo.com/material-ui-react-tutorial/)
+
+--
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
