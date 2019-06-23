@@ -6,15 +6,15 @@ import './App.css';
 
 import Navbar from './Navbar';
 
+const menuList = ['Home', 'Posts', 'Contact'];
+
 function App() {
   return (
     <div>
       <AppBar color="primary" position="static">
         <ToolBar>
-          <Typography variant="h4" component="h1" color="inherit">
-            My Header
-          </Typography>
-          <Navbar />
+          <Typography variant="h4" component="h1" color="inherit">My Header</Typography>
+          <Navbar menuList={menuList} />
         </ToolBar>
       </AppBar>
     </div>

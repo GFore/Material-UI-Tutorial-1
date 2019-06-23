@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core/';
+import { List, ListItem, ListItemText, Typography } from '@material-ui/core/';
 import { AccountBox, Book, Home } from '@material-ui/icons/';
 
 const MenuItems = ({ menuList }) => {
@@ -20,10 +20,11 @@ const MenuItems = ({ menuList }) => {
 }
 
 function Navbar(props) {
+  const { menuList } = props;
   return (
     <List component="nav">
       <ListItem component="div">
-        <MenuItems menuList={['Home', 'Posts', 'Contact']} />
+        <MenuItems menuList={menuList} />
       </ListItem>
     </List>
   );
