@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import './App.css';
 
 import Navbar from './Navbar';
+import Posts from './Posts';
 
 const menuList = ['Home', 'Posts', 'Contact'];
 
@@ -17,6 +18,7 @@ function App() {
           <Navbar menuList={menuList} />
         </ToolBar>
       </AppBar>
+      <Posts />
     </div>
   );
 }
