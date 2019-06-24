@@ -6,6 +6,7 @@ import './App.css';
 
 import Navbar from './Navbar';
 import Posts from './Posts';
+import Contacts from './Contacts';
 
 const menuList = ['Home', 'Posts', 'Contact'];
 
@@ -19,6 +20,7 @@ function App() {
         </ToolBar>
       </AppBar>
       <Posts />
+      <Contacts />
     </div>
   );
 }
