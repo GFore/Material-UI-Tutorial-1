@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItem, ListItemText, Typography } from '@material-ui/core/';
+import { List, ListItem, ListItemText, Typography, Grid } from '@material-ui/core/';
 import { AccountBox, Book, Home } from '@material-ui/icons/';
 
 const MenuItems = ({ menuList }) => {
@@ -7,12 +7,14 @@ const MenuItems = ({ menuList }) => {
     return (
       <ListItemText inset key={i}>
         <Typography color="inherit" variant="h5">
-          {menuItem === 'Home' ? 
-              <Home />
-            : menuItem === 'Posts' ?
-              <Book />
-            : <AccountBox />
-          } {`${menuItem}`}
+          <Grid container alignItems="center" >
+            {menuItem === 'Home' ? 
+                <Home />
+              : menuItem === 'Posts' ?
+                <Book />
+              : <AccountBox />
+            } {`${menuItem}`}
+          </Grid>
         </Typography>
       </ListItemText>
     );
